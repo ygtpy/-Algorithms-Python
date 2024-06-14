@@ -1,17 +1,17 @@
+import random
 data = [2,4,5,7,8,9,12,14,17,19,22,25,27,28,33,37]
-target = 28
+target = random.randint(0, 40)
 
 # Linear Search 
 def linear_search(data, target):
     for i in range(len(data)):
         if data[i] == target:
             return True
-        return False
+    return False
 
+print(linear_search(data, target))
 #%%
 # Iterative Binary search
-import random
-
 def binary_search_iterative(data, target):
     low = 0
     high = len(data) - 1
@@ -22,7 +22,7 @@ def binary_search_iterative(data, target):
             return mid
         elif target < data[mid]:
             high = mid - 1
-        else:
+        else: 
             low = mid + 1
     return False        
 
@@ -31,9 +31,9 @@ target = random.randint(0, 40)
 
 result = binary_search_iterative(data, target)
 if result != False:
-    print(f"Eleman {result} indeksinde bulundu.")
+    print(f"Hedef {result} indeksinde bulundu.")
 else:
-    print("Eleman dizide bulunamadı.")
+    print("Hedef dizide bulunamadı.")
 
 
 #%%
@@ -64,9 +64,83 @@ result = binary_search_recursive(data, target, 0, len(data) - 1)
 
 
 if result != False:
-    print(f"Eleman {result} indeksinde bulundu.")
+    print(f"Hedef {result} indeksinde bulundu.")
 else:
-    print("Eleman dizide bulunamadı.")
+    print("Hedef dizide bulunamadı.")
+
+
+#%%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
