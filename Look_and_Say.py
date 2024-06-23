@@ -1,9 +1,5 @@
 
 
-
-
-
-
 def next_number(s):
     result = []
     i = 0
