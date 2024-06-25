@@ -12,7 +12,9 @@ def spread_column(column_str):
 
 print(spread_column("A"))
 print(spread_column("Z"))
-print(spread_column("AA"))
+print(spread_column("ADD"))
+
+
 
 
 
