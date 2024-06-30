@@ -53,5 +53,3 @@ print(perm_2("abcdefghijklmnopqrstuvwxyz" * 100, "zyxwvutsrqponmlkjihgfedcba" * 
 
 
 
-
-
