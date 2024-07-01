@@ -1,6 +1,6 @@
 
-def find_fixed_point(A):
-    A.sort()
+def Binary_Search(A):
+    
     low = 0
     high = len(A)- 1 
     while low <= high:
@@ -16,12 +16,11 @@ def find_fixed_point(A):
 
 
 A = [-10, -5, 0, 3, 7]
-print(find_fixed_point(A))
+print(Binary_Search(A))
 
 #%%
 
-
-def find_fixed_point_linear(A):
+def Linear_Search(A):
     for i in range(len(A)):
         if A[i] == i:
             return A[i]
@@ -29,15 +28,30 @@ def find_fixed_point_linear(A):
 
 
 A = [-10, -5, 0, 3, 7]
-print(find_fixed_point_linear(A))
+print(Linear_Search(A))
 
 
+#%%
+
+def function_option(A):
+    for index, value in enumerate(A):
+        if index == value:
+            return value
+    return None
+    
+
+A = [-10, -5, 9, 3, 7]
+print(function_option(A))
 
 
+#%%
 
+def function_choice(liste):
+    result = next(filter(lambda x: x[0] == x[1], enumerate(liste)), None)
+    return result[1] if result else None
 
-
-
+A = [-10, -5, 9, 3, 7]
+print(function_choice(A))
 
 
 
