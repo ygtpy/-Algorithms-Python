@@ -1,6 +1,6 @@
 
 def find_fixed_point(A):
-    
+    A.sort()
     low = 0
     high = len(A)- 1 
     while low <= high:
@@ -30,12 +30,6 @@ def find_fixed_point_linear(A):
 
 A = [-10, -5, 0, 3, 7]
 print(find_fixed_point_linear(A))
-
-
-
-
-
-
 
 
 
