@@ -1,5 +1,5 @@
 
-def is_polindrome(string):
+def is_palindrome(string):
     
     string = string.replace(" "," ")
     string = string.lower()
@@ -23,8 +23,8 @@ def is_polindrome(string):
 palin_perm = "Tact Coa"
 not_palin_perm = "This is not a palindrome permutation"
 
-print(is_palin_perm(palin_perm))  
-print(is_palin_perm(not_palin_perm))  
+print(is_palindrome(palin_perm))  
+print(is_palindrome(not_palin_perm))  
 
 
 

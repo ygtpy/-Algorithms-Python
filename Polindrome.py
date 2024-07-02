@@ -1,6 +1,7 @@
 
 s1 = "Was it a cat I saw"
 s2 = "Test"
+s3 = "A man, a plan, a canal, Panama"
 
 def palindrome(s):
     i = 0
@@ -19,7 +20,7 @@ def palindrome(s):
     return True   
 
 
-print(palindrome(s1))
+print(palindrome(s3))
         
 print(palindrome(s2))
 
