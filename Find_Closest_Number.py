@@ -1,5 +1,3 @@
-
-
 def find_closest_num(A, target):
     min_diff = float("inf")
     low = 0
